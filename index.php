@@ -204,7 +204,7 @@ $ad=new ad($adid,$interval,$custominterval);
 <?php 
 	include("charts/osstats.php");
 	include("charts/hourstats.php");
-	//include("charts/locationgraph.php");
+	include("charts/locationgraph.php");
 ?>
  
 </div>
