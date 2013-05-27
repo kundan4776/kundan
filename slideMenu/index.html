@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-----META----->
+<title>Sliding menu panel using jQuery</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Sliding menu panel using jQuery" />
+    <meta name="keywords" content="menu, sliding menu, tutorial, jQuery, css, html" />
+    <meta name="author" content="Dzyngiri" />
+
+<!-----STYLESHEETS----->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/font/font.css" rel="stylesheet" type="text/css" />
+
+<!-----SCRIPTS----->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-----SLIDING PANEL HEIGHT ADJUST TO DOCUMENT HEIGHT----->
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#menu").height($(document).height());
+});
+</script>
+
+<!-----SLIDING PANEL DELAY AND HIDE----->
+<script type="text/javascript">
+$(document).ready(function() {
+
+    setTimeout( function(){
+	
+	$('#menu').css('left','-130px');},1000); <!-- Change 'left' to 'right' for panel to appear to the right -->
+});
+</script>
+
+</head>
+
+<body>
+
+<!-----SLIDING MENU PANEL----->
+<div id="menu">
+	<div class="arrow"> > </div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">An introduction: Design in 2012</a>
+            <a href="#">Relevant figures in design</a>
+            <a href="#">Where is design heading?</a>
+            <a href="#">Influences</a>
+            <a href="#">Video</a>
+            <a href="#">Sources</a>
+        </nav>
+</div>
+<!-----END SLIDING MENU PANEL----->
+
+<!-----DEMO ONLY----->
+	<div class="wrapper">
+        <h1>Sliding Menu Panel Using jQuery</h1>
+        <p>The panel to the left is <strong>easily customizable</strong> primairly through CSS with minor javascript. It is very simple to adjust which side of the document (right, top and bottom) the panel appears.</p>
+        <p>There is a <strong>delay</strong> at the beginning of the page load where the panel is visible to the user, which is purposely done to give the user a visual cue/hint the panel is there and now it is slightly hidden. However, if you would like to remove the delay, you will need to remove some javascript and adjust the CSS accordingly.</p>
+	</div>
+
+<a href="http://www.dzyngiri.com/index.php/sliding-panel-menu-using-jquery/" class="download">Head on to tutorial</a>
+<!-----END DEMO ONLY----->
+
+</body>
+</html>

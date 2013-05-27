@@ -1,0 +1,79 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=300|Acme); /* Acme font is required for .arrow */
+
+/*****END DEMO ONLY*****/
+ 
+
+/*****ANIMATONS (optional)*****/
+
+#menu, #menu .arrow, #menu nav a {
+	transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+}
+
+/*****END ANIMATONS*****/
+
+
+/*****PANEL*****/
+
+#menu {
+	
+	width: 100px;
+	padding: 30px;
+	position: fixed;
+	z-index: 100000;
+	
+}
+
+#menu {
+	left: 0; /* Change to right: 0; if you want the panel to display on the right side. */
+}
+
+#menu:hover, #menu:focus {
+	left: 0 !important; /* Change to right: 0 !important; if you want the panel to display on the right side. */
+}
+
+#menu .arrow {
+	right: 2px; /* Change to left: 2px; if you want the panel to display on the right side. */
+}
+
+#menu .arrow {
+	font: normal 400 25px/25px 'Acme', Helvetica, Arial, sans-serif; /* Acme font is required for .arrow */
+	color: rgba(0,0,0,0.75); /* Arrow color */
+	width: 16px;
+	height: 25px;
+	display: block;
+	position: absolute;
+	top: 20px;
+	cursor: default;
+}
+
+#menu:hover .arrow {
+	transform: rotate(-180deg) translate(6px,-3px);
+	-moz-transform: rotate(-180deg) translate(6px,-3px);
+	-webkit-transform: rotate(-180deg) translate(6px,-3px);
+}
+
+#menu nav {
+	position: relative;
+	top: 75px;
+}
+
+#menu nav a {
+	padding: 10px 5px;
+	border-bottom: 1px dotted #c0c0c0;
+	display: block;
+	clear: both;
+	font: bold 13px/18px 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+#menu nav a:hover {
+	color: #ee4e1d;
+}
+
+/*****END PANEL*****/

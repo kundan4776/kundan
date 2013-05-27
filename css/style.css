@@ -1,0 +1,775 @@
+html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ abbr, acronym, address, big, cite, code,
+ del, dfn, em, font, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td {
+     padding:0;
+     margin:0;
+
+ }
+ 
+img,button
+{
+	border:none;
+}
+
+
+
+body
+{
+	font-family: 'Ubuntu'; 
+	
+	margin:0;
+	padding:0;
+	background-image:url('../images/texture_patch.jpg');
+
+}
+a:active
+{
+	outline:none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  text-decoration:none;
+  outline:none;
+  color:inherit;
+}
+
+.container
+{
+    margin:0px auto;
+    width:960px;
+	text-align:left;
+	/*z-index:1;*/
+	/*font-family: 'condensed'; */
+	padding-left:30px;
+}
+.header
+{
+	height:60px;
+	padding-top:45px;
+}
+
+
+#menu
+{
+	font-family: 'Ubuntu';
+	list-style: none;
+	font-size:13px;
+	
+}
+
+.pagetitle
+{
+	font-weight:bold;
+	vertical-align:middle;
+	font-size:35px;
+	font-weight:bold;
+	
+} 
+#menu li
+{
+	margin-left:30px;
+	display:inline-block;
+}
+.selectedMenu
+{
+	background:#0093d6;
+	-webkit-border-radius:13px;
+	-moz-border-radius:13px;
+	border-radius: 13px;
+	color:#ffffff;
+	padding:5px 15px;   
+	font-family: 'Ubuntu';
+	list-style: none;
+	font-size:13px;
+}
+
+.boxshadow
+{
+	border:1px solid #D9D9D9;
+	-webkit-box-shadow:0px 0px 1px #D9D9D9,-1px 0px 2px #D9D9D9, 1px 0px 2px #D9D9D9;
+    -moz-box-shadow: 0px 0px 1px #D9D9D9,-1px 0px 2px #D9D9D9, 1px 0px 2px #D9D9D9;
+	box-shadow:0px 0px 1px #D9D9D9,-1px 0px 2px #D9D9D9, 1px 0px 2px #D9D9D9;
+	background:#ffffff;
+}
+
+.statistics
+{
+	font-family: 'Ubuntu';
+	vertical-align:middle;
+	font-size:22px;
+	text-align:left;
+	font-weight:bold;
+	color:#3c3c3c
+	
+}
+
+.statistics td
+{
+	border-left:1px solid #D9D9D9;
+	padding:5px 15px;
+}
+
+.statistics td div
+{
+	padding:10px;
+	
+}
+
+.substat
+{
+	font-family: 'Ubuntu';
+	font-size:15px;
+	margin:5px 0px;
+	text-align:left;
+	font-weight:bold;
+	color:#6893a9
+}
+
+.substat img
+{
+	margin-left:15px;
+}
+
+ .blueContainer
+{ 
+   
+   
+   /*background:#e4e4e4;*/
+   float:left;    
+
+	
+	/*border-top:1px solid #e1e1e1;
+	border-bottom:1px solid #cecece;
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;*/
+	
+}
+ .blueContainerHead
+ {
+  padding:0px;
+  vertical-align:middle;
+  color: #777676;
+  -webkit-border-top-right-radius: 6px;
+   -moz-border-radius: 6px;
+   border-top-right-radius:6px;
+    -webkit-border-top-left-radius: 6px;
+   border-top-left-radius:6px;
+  
+  background-image: -ms-linear-gradient(bottom, #e4e4e4 0%, #f7f7f7 100%);
+    
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(bottom, #e4e4e4 0%, #f7f7f7 100%);
+    
+    /* Opera */ 
+    background-image: -o-linear-gradient(bottom, #e4e4e4 0%, #f7f7f7 100%);
+    
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e4e4e4), color-stop(1, #f7f7f7));
+    
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(bottom, #e4e4e4 0%, #f7f7f7 100%);
+    
+    /* Proposed W3C Markup */ 
+    background-image: linear-gradient(bottom, #e4e4e4 0%, #f7f7f7 100%);
+	border:1px solid #c9c9c9;
+}
+ .blueContainerHead td
+{
+	padding:5px 10px;
+}
+
+.clear
+{
+	clear:right;
+}
+ .whiteContainer
+{
+	background:#ffffff;padding:40px 10px;
+	border-top:none;
+}  
+
+.minimise
+{
+	font-family: 'Ubuntu';
+	font-size:30px;
+	padding:0px 10px;
+	text-align:center;
+	vertical-align:center;
+	border-left:2px solid #dddddd;   
+	width:5%;
+}
+
+.viewstat
+{
+	font-family: 'Ubuntu';
+	font-size:15px;
+	text-align:center;
+	width:15%;
+	border-left:2px solid #dddddd;
+}
+
+.boxtitle
+{
+font-family: 'Ubuntu';
+font-size:15px;
+padding:10px;
+font-weight:bold;
+}
+
+.opratingsysTblTd
+{
+	text-align:center;
+	border-left:1px solid #d9d9d9;
+	border-right:1px solid #d9d9d9;
+	padding:20px 40px;
+	
+}
+
+.timeofdaytbl td
+{
+	
+	font-size:12px;
+	color:#6b6b6b
+}
+.timeofdaytbl th
+{
+	color:#525252;
+	padding-bottom:10px
+}
+.timeofdaytbl td div
+{
+ height:29px
+}
+.Bigtext
+{
+	font-family: 'Ubuntu';
+	vertical-align:middle;
+	font-size:20px;
+	font-weight:bold
+	
+}
+
+
+.menu_table
+{
+    font-size:100%;
+    font-weight:bold;
+    /*     background:#75746f; */
+    /*     border:1px solid #5b5a54; */
+    /* height:5%; */
+    border-collapse:colapse;
+	width:100%;
+}
+
+.menu_table tr td a
+{
+    
+    font-weight:bold;
+    font-size:0.8375em; 
+   	
+}
+.menu_table tr td 
+{
+    padding:6px;
+	height:100%;
+	text-align:center;
+    width: 55px;
+	   
+}
+.selMenu{
+    /*     padding:0.3em 0.2em 0.3em 0.4em; */
+    /*     background-color:#0880b5;  */
+    
+    font-weight:bold;
+    font-size:1em;
+    text-align:center;
+    padding-top:3px;
+    padding-bottom:3px;
+
+}
+.unselMenu{
+    /*     padding:0.2em 0.2em 0.3em 0.4em; */
+    font-weight:bold;
+    font-size:1em;
+    text-align:center;
+    padding-top:3px;
+    padding-bottom:3px;
+	color:#929292;
+	
+       
+}
+.selMenuhome{ 
+    /*     padding:0.3em 0.2em 0.3em 0.4em; */
+    /*     background-color:#0880b5;  */
+    /*     border-bottom:1px solid #3b97d6; */
+    font-weight:bold;
+    font-size:1em;
+    text-align:left;
+    padding-top:3px;
+    padding-bottom:3px;
+   	color:#ffffff;
+	
+	background-image: -ms-linear-gradient(bottom, #0880b5 0%, #3b97d6 100%);
+    
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(bottom, #0880b5 0%, #3b97d6 100%);
+    
+    /* Opera */ 
+    background-image: -o-linear-gradient(bottom, #0880b5 0%, #3b97d6 100%);
+    
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0880b5), color-stop(1, #3b97d6));
+    
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(bottom, #0880b5 0%, #3b97d6 100%);
+    
+    /* Proposed W3C Markup */ 
+    background-image: linear-gradient(bottom, #0880b5 0%, #3b97d6 100%);
+	
+	
+
+}
+.unselMenuhome{
+    /*     padding:0.2em 0.2em 0.3em 0.4em; */
+    font-weight:bold;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+.topheader
+{
+	height:55px;
+	margin:0px;
+	padding:0px;
+	background: url(../images/top_nav.png) repeat-x;
+	position:fixed;
+	width:100%;
+	z-index:1234;
+}
+
+.navigationDiv{
+margin:30px 0px
+}
+.radiusDiv
+{
+background: #ffffff;
+border: 1px solid #D9D9D9;
+color: #0092D7;
+font-weight: bold;
+padding:5px 15px;
+-webkit-border-radius: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+webkit-box-shadow: 0 0 5px 2px #D9D9D9;
+-moz-box-shadow: 0 0 5px 2px #D9D9D9;
+box-shadow: 0 0 5px 2px #D9D9D9;
+font-size: 13px;
+width:120px;
+display:inline-block;
+vertical-align:middle;
+position:relative
+}
+.navigationtext
+{
+	position: absolute;
+	top: 12px;
+	padding-right:10px
+}
+
+.arrowsep
+{
+display:inline-block;
+vertical-align:middle;
+}
+.redtext
+{
+color:#EF0D0E;
+font-weight:bold;
+margin-right:5px
+}
+
+.emptywhiteContainer
+{
+	height:10px;
+	display:none;
+}
+
+.fillerDiv {
+height: 1028px;
+width: 200px;
+background-image: url('../images/left_menu_patch.png');
+color: #d1d0d0;
+font-size: 85%;
+float: left;
+margin-left: 0px;
+}
+
+.leftMenuTtlOutDiv {
+border-bottom: 1px solid #282828;
+width: 150px;
+}
+
+.selectedTitle {
+background: #252728;
+border: none;
+border-right:2px solid red;
+
+}
+
+.leftMenuTtlDiv {
+
+display: inline-block;
+border-bottom: 1px solid #424242;
+line-height: 50px;
+color: #d1d0d0;
+cursor: pointer;
+font-weight: bold;
+width: 150px;
+}
+
+.leftMenuTtlDiv a
+{
+	font-weight:bold;
+}
+
+.rightMenuTextSpan {
+float: right;
+color: #d1d0d0;
+padding: 0 4px 0 0px;
+vertical-align: middle;
+margin-right: 5px;
+position: relative;
+top: 18px;
+display: none;
+
+}
+
+.leftMenuTextSpan {
+color: #d1d0d0;
+padding: 0 0 0 15px;}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=300|Acme); /* Acme font is required for .arrow */
+
+/*****END DEMO ONLY*****/
+ 
+
+/*****ANIMATONS (optional)*****/
+
+#leftmenu, #leftmenu .arrow, #leftmenu nav a {
+	transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+}
+
+
+/*****END ANIMATONS*****/
+
+
+/*****PANEL*****/
+
+#leftmenu {
+	height: 1028px;
+    top:50px;
+	margin-right:10px;
+	background-image: url('../images/left_menu_patch.png');
+	color: #d1d0d0;
+	font-size: 85%;
+	width: 150px;	
+	position: fixed;
+	font-size: 0.8375em
+}
+
+#leftmenu {
+	left: 0; /* Change to right: 0; if you want the panel to display on the right side. */
+}
+
+#leftmenu:hover, #leftmenu:focus {
+	left: 0 !important; /* Change to right: 0 !important; if you want the panel to display on the right side. */
+}
+
+#leftmenu .arrow {
+	right: 2px; /* Change to left: 2px; if you want the panel to display on the right side. */
+}
+
+#leftmenu .arrow {
+	font: normal 400 25px/25px 'Acme', Helvetica, Arial, sans-serif; /* Acme font is required for .arrow */
+	color: #ffffff; /* Arrow color */
+	width: 16px;
+	height: 25px;
+	display: block;
+	position: absolute;
+	top: 20px;
+	cursor: default;
+}
+
+#leftmenu:hover .arrow {
+	transform: rotate(-180deg) translate(6px,-3px);
+	-moz-transform: rotate(-180deg) translate(6px,-3px);
+	-webkit-transform: rotate(-180deg) translate(6px,-3px);
+}
+
+#leftmenu nav {
+	position: relative;
+	top: 75px;
+}
+
+#leftmenu nav a {
+	padding: 10px 5px;
+	border-bottom: 1px dotted #c0c0c0;
+	display: block;
+	clear: both;
+	font: bold 13px/18px 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+#leftmenu nav a:hover {
+	color: #ee4e1d;
+}
+
+#maincontainer
+{
+	padding-top:50px;
+}
+
+
+.sourcetbl 
+{
+	width:100%;
+}
+
+.sourcetbl th
+{
+	color:#626976;
+}
+
+.sourcetbl td
+{
+	color:#465160;
+	width:20%;
+	padding:20px;
+}
+
+.sourcetblTraffic 
+{
+	width:55%;
+	margin:auto;
+	padding-bottom:10px;
+	
+}
+
+.sourcetblTraffic th
+{
+	color:#6893a9;
+	padding:10px;
+	font-size:18px;
+}
+
+.sourcetblTraffic td
+{
+	color:#465160;
+	width:50%;
+	padding:10px;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.sourcetblTraffic td:nth-child(2)
+{
+	text-align:right;
+}
+
+.sourcetblTraffic td:nth-child(1)
+{
+	text-align:left;
+}
+
+.sourcetblTraffic th:nth-child(2)
+{
+	text-align:right;
+}
+
+.sourcetblTraffic th:nth-child(1)
+{
+	text-align:left;
+}
+.stats{
+	padding:8px;
+	text-align:left;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Ubuntu'; 
+}
+.bluetxt
+{
+	color:#6893a9;;
+	padding-top:3px;
+	font-size:10px;
+}
+
+/****************************css**************************************/
+.sourcetbl 
+{
+	width:100%;
+	margin-left:50px;
+	
+}
+
+.sourcetbl th
+{
+	color:#626976;
+	padding:20px;
+	text-align:left;
+}
+
+.sourcetbl td
+{
+	color:#465160;
+	width:20%;
+	padding:20px;
+	font-size:22px;
+	font-weight:bold;
+}
+
+.radius
+{
+-webkit-border-radius: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+
+.totaltraffic
+{
+	/*padding:5px;
+	font-weight:bold;
+	font-size:21px;
+	text-align:center;
+	margin:20px auto;
+	width:65%;*/
+	padding:20px;
+	margin:0px 20px;
+	font-size:22px;
+	color:#3c3c3c;
+	text-align:center;
+	margin:0px auto;
+	width:65%;
+}
+
+
+.sourcetblTraffic 
+{
+	width:55%;
+	margin:auto;
+	padding-bottom:10px;
+	
+}
+
+.sourcetblTraffic th
+{
+	color:#6893a9;
+	padding:10px;
+	font-size:18px;
+}
+
+.sourcetblTraffic td
+{
+	color:#465160;
+	width:50%;
+	padding:10px;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.sourcetblTraffic td:nth-child(2)
+{
+	text-align:right;
+}
+
+.sourcetblTraffic td:nth-child(1)
+{
+	text-align:left;
+}
+
+.sourcetblTraffic th:nth-child(2)
+{
+	text-align:right;
+}
+
+.sourcetblTraffic th:nth-child(1)
+{
+	text-align:left;
+}
+
+.highestTraffictop
+{
+	width:100%;
+	height:1px;
+	margin:0px;
+	padding:0px;
+	border-top:1px solid #d9d9d9;
+}
+.highestTraffic	
+{
+	width:55%;
+	margin:auto;
+	padding:10px 0px;
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.pieframe
+{
+height:630px;width:100%;text-align:center;
+}
+
+#selectgoal
+{
+	height:30px;
+	width:200px;
+	-webkit-border-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border:1px solid #c1d1db;
+	font-size: 16px;
+    font-family: 'Ubuntu';
+	color:#747d94
+}
+
+.selectedDiv
+{
+border-top:1px solid #1c1d1e;border-bottom:#424242
+}
+.requeststats td
+{
+	font-size:12px;
+	color:#6b6b6b;
+	text-align:center;
+}
+.requeststats th
+{
+	color:#525252;
+	padding-bottom:10px;
+	text-align:center;
+}
+.requeststats td 
+{
+ height:29px
+}
